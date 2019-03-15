@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Drum Machine</title>
+</head>
+<body class="bg-dark">
+    <div class="container col-xs-4 justify-content-center" id="drum-machine">
+        <div id="display">
+            <div class="row">
+                <div data-key="81" class="col drum-pad key" id="clap">
+                    <p>Q</p><audio data-key="81" src="./sounds/clap.wav" id="Q" class="clip"></audio>
+                </div>
+                <div data-key="87" class="col drum-pad key" id="hihat">
+                    <p>W</p><audio data-key="87" src="./sounds/hihat.wav" id="W" class="clip"></audio>
+                </div>
+                <div data-key="69" class="col drum-pad key" id="kick">
+                    <p>E</p><audio data-key="69" src="./sounds/kick.wav" id="E" class="clip"></audio>
+                </div>
+                <div class="col bg-light controls">
+                    <div class="middle"><span id="power"><i class="fas fa-power-off icon"></i></span><input id="power-btn" type="checkbox"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div data-key="65" class="col drum-pad key" id="openhat">
+                    <p>A</p><audio data-key="65" src="./sounds/openhat.wav" id="A" class="clip"></audio>
+                </div>
+                <div data-key="83" class="col drum-pad key" id="boom">
+                    <p>S</p><audio data-key="83" src="./sounds/boom.wav" id="S" class="clip"></audio>
+                </div>
+                <div data-key="68" class="col drum-pad key" id="ride">
+                    <p>D</p><audio data-key="68" src="./sounds/ride.wav" id="D" class="clip"></audio>
+                </div>
+                <div class="col bg-light controls">
+                    <div class="middle"><p id="audio-name"></p></div>
+                </div>
+            </div>
+            <div class="row">
+                <div data-key="90" class="col drum-pad key">
+                    <p>Z</p><audio data-key="90" src="./sounds/snare.wav" id="Z" class="clip"></audio>
+                </div>
+                <div data-key="88" class="col drum-pad key">
+                    <p>X</p><audio data-key="88" src="./sounds/tom.wav" id="X" class="clip"></audio>
+                </div></a>
+                <div data-key="67" class="col drum-pad key" id="tink">
+                    <p>C</p><audio data-key="67" src="./sounds/tink.wav" id="C" class="clip"></audio>
+                </div>
+                <div class="col bg-light controls">
+                    <div class="middle"><input type="range" min="0" max="10" class="slider" id="volume"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
